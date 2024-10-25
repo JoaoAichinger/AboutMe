@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Agdasima, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    background: #1b025f;
+}
+
+.title {
+    background: #1b025f;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+section {
+    padding: 60px 20px;
+    background: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.6s ease-out;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom,#1b025f, rgb(30, 76, 170));
+    font-size: 36px;
+}
+
+.content{
+    
+    text-align: center;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content_1_img{
+    max-width: 30vw;
+}
+
+.content_2_img{
+    max-width: 70vw;
+}
+
+.title_img{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.social_img{
+    max-width: 5vw;
+}
